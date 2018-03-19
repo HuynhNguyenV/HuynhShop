@@ -15,6 +15,7 @@ namespace HuynhShop.Data
             this.Configuration.LazyLoadingEnabled = false;
         }
 
+
         public DbSet<Footer> Footers { get; set; }
         public DbSet<Menu> Menus { get; set; }
         public DbSet<MenuGroup> MenuGroups { get; set; }
@@ -26,7 +27,7 @@ namespace HuynhShop.Data
         public DbSet<PostTag> PostTags { get; set; }
         public DbSet<Product> Products { get; set; }
 
-        public DbSet<ProductCateogry> ProductCateogries { get; set; }
+        public DbSet<ProductCategory> ProductCateogries { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
 
         public DbSet<Slide> Slides { get; set; }
@@ -37,7 +38,7 @@ namespace HuynhShop.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            
         }
     }
 }
