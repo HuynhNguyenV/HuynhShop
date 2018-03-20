@@ -18,6 +18,7 @@ namespace HuynhShop.Data.Infrastructure
         //Marks an entity as removed
         void Delete(T entity);
 
+        void Delete(int id);
         //Delete multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
 
